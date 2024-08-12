@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Access Example</title>
+</head>
+<style>
+     #videoElement {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+
+        /* Mirror effect - applied by default */
+        .mirror {
+            transform: scaleX(-1);
+            -webkit-transform: scaleX(-1); /* For Safari */
+        }
+</style>
+
+<body>
+    <h1>Camera Feed</h1>
+    <video id="videoElement" autoplay></video>
+    <button id="toggleBtn" onclick="Toggle();">Mirror</button>
+    <script src="script.js"></script>
+</body>
+</html>
